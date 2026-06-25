@@ -7,3 +7,121 @@
   --secondary-bg-color: #f5f4fa;
   --dark-bg-color: #2f303a;
 }
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+abbr {
+  text-decoration: none;
+  cursor: help;
+}
+
+.list {
+  list-style-type: none;
+}
+
+/* Logo */
+
+.logo {
+  color: #000000;
+}
+
+.logo.inverse {
+  color: var(--primary-white-color);
+}
+
+.logo > .accent {
+  color: var(--accent-color);
+}
+
+/* Button */
+
+.button {
+  color: var(--primary-white-color);
+
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--button-hover-bg-color);
+}
+
+/* Site nav & Contacts */
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link.active,
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts > .link:hover,
+.contacts > .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--dark-bg-color);
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+}
+
+/* Section */
+
+.section.secondary {
+  background-color: var(--secondary-bg-color);
+}
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Features */
+
+.features-list .title {
+  color: var(--title-text-color);
+}
+
+/* Team */
+
+.team-list .name {
+  color: var(--title-text-color);
+}
+
+/* Page footer */
+
+.page-footer {
+  background-color: var(--dark-bg-color);
+}
+
+.footer-contacts .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts .link.map {
+  color: var(--primary-white-color);
+}
+
+.footer-contacts .link:hover,
+.footer-contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* Project card */
+
+.project-card > .title {
+  color: var(--title-text-color);
+}

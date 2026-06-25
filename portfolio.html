@@ -9,23 +9,30 @@
     />
     <meta name="author" content="Anatoliy Nosenko" />
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Page header -->
     <header>
       <nav>
-        <a href="./" lang="en">Web Studio</a>
+        <a class="logo" href="./" lang="en">
+          <span class="accent">Web</span> Studio
+        </a>
 
-        <ul>
-          <li><a href="./">Студия</a></li>
-          <li><a href="./portfolio.html" aria-current="page">Портфолио</a></li>
-          <li><a href="#">Контакты</a></li>
+        <ul class="site-nav list">
+          <li><a class="link" href="./">Студия</a></li>
+          <li>
+            <a class="link active" href="./portfolio.html" aria-current="page">
+              Портфолио
+            </a>
+          </li>
+          <li><a class="link" href="#">Контакты</a></li>
         </ul>
       </nav>
 
-      <div>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
+      <div class="contacts">
+        <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
       </div>
     </header>
 
@@ -35,28 +42,28 @@
       <section>
         <h1>Наши работы</h1>
 
-        <ul>
+        <ul class="list">
           <li>
-            <article>
+            <article class="project-card">
               <img
                 src="./images/works/pic-1.jpg"
                 alt="Сайт на экране ноутбука"
                 width="370"
                 height="294"
               />
-              <h2><a href="#">Технокряк</a></h2>
+              <h2 class="title"><a href="#">Технокряк</a></h2>
               <p>Веб-сайт</p>
             </article>
           </li>
           <li>
-            <article>
+            <article class="project-card">
               <img
                 src="./images/works/pic-2.jpg"
                 alt="Два баскетболиста с мячом"
                 width="370"
                 height="294"
               />
-              <h2>
+              <h2 class="title">
                 <a href="#">
                   Постер
                   <span lang="en">
@@ -68,82 +75,84 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="project-card">
               <img
                 src="./images/works/pic-3.jpg"
                 alt="Логотип ресторана"
                 width="370"
                 height="294"
               />
-              <h2>
+              <h2 class="title">
                 <a href="#">Ресторан <span lang="en">Seafood</span></a>
               </h2>
               <p>Приложение</p>
             </article>
           </li>
           <li>
-            <article>
+            <article class="project-card">
               <img
                 src="./images/works/pic-4.jpg"
                 alt="Беспроводные наушники"
                 width="370"
                 height="294"
               />
-              <h2>
+              <h2 class="title">
                 <a href="#">Проект <span lang="en">Prime</span></a>
               </h2>
               <p>Маркетинг</p>
             </article>
           </li>
           <li>
-            <article>
+            <article class="project-card">
               <img
                 src="./images/works/pic-5.jpg"
                 alt="Две коробки на белом фоне"
                 width="370"
                 height="294"
               />
-              <h2>
+              <h2 class="title">
                 <a href="#">Проект <span lang="en">Boxes</span></a>
               </h2>
               <p>Приложение</p>
             </article>
           </li>
           <li>
-            <article>
+            <article class="project-card">
               <img
                 src="./images/works/pic-6.jpg"
                 alt="Сайт на экране монитора"
                 width="370"
                 height="294"
               />
-              <h2><a href="#" lang="en">Inspiration has no Borders</a></h2>
+              <h2 class="title">
+                <a href="#" lang="en">Inspiration has no Borders</a>
+              </h2>
               <p>Веб-сайт</p>
             </article>
           </li>
           <li>
-            <article>
+            <article class="project-card">
               <img
                 src="./images/works/pic-7.jpg"
                 alt="Открытый глянцевый журнал"
                 width="370"
                 height="294"
               />
-              <h2>
+              <h2 class="title">
                 <a href="#">Издание <span lang="en">Limited Edition</span></a>
               </h2>
               <p>Дизайн</p>
             </article>
           </li>
           <li>
-            <article>
+            <article class="project-card">
               <img
                 src="./images/works/pic-8.jpg"
                 alt="Бирка с названием компании"
                 width="370"
                 height="294"
               />
-              <h2>
+              <h2 class="title">
                 <a href="#">
                   Проект <abbr title="Laboratory" lang="en">LAB</abbr>
                 </a>
@@ -152,14 +161,14 @@
             </article>
           </li>
           <li>
-            <article>
+            <article class="project-card">
               <img
                 src="./images/works/pic-9.jpg"
                 alt="Человек работает на ноутбуке"
                 width="370"
                 height="294"
               />
-              <h2><a href="#" lang="en">Growing Business</a></h2>
+              <h2 class="title"><a href="#" lang="en">Growing Business</a></h2>
               <p>Приложение</p>
             </article>
           </li>
@@ -168,13 +177,16 @@
     </main>
 
     <!-- Page footer -->
-    <footer>
-      <a href="./" lang="en">Web Studio</a>
+    <footer class="page-footer">
+      <a class="logo inverse" href="./" lang="en">
+        <span class="accent">Web</span> Studio
+      </a>
 
       <address>
-        <ul>
+        <ul class="footer-contacts list">
           <li>
             <a
+              class="link map"
               href="https://maps.app.goo.gl/Gkqo7Z41vK2xTPrL8"
               target="_blank"
               rel="noopener noreferrer"
@@ -182,8 +194,12 @@
               г. Киев, пр-т Леси Украинки, 26
             </a>
           </li>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+          <li>
+            <a class="link" href="mailto:info@example.com">info@example.com</a>
+          </li>
+          <li>
+            <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+          </li>
         </ul>
       </address>
     </footer>
