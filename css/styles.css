@@ -70,13 +70,50 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 abbr {
   text-decoration: none;
   cursor: help;
 }
 
+/* Utilities */
+
 .list {
+  padding-left: 0;
+  margin: 0;
   list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 /* Logo */
@@ -100,6 +137,9 @@ abbr {
 /* Button */
 
 .button {
+  min-width: 200px;
+  padding: 10px 28px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -107,6 +147,8 @@ abbr {
   color: var(--primary-white-color);
 
   background-color: var(--accent-color);
+  border: 0;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -144,6 +186,9 @@ abbr {
 }
 
 .hero-title {
+  width: 696px;
+  margin: 0 auto 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -154,11 +199,21 @@ abbr {
 
 /* Section */
 
+.section {
+  padding: 94px 0;
+}
+
+.section.no-padding-b {
+  padding-bottom: 0;
+}
+
 .section.secondary {
   background-color: var(--secondary-bg-color);
 }
 
 .section-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   color: var(--title-text-color);
@@ -168,6 +223,8 @@ abbr {
 /* Features */
 
 .features-list .title {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.14;
   color: var(--title-text-color);
@@ -188,6 +245,7 @@ abbr {
 }
 
 .team-list .name {
+  margin-bottom: 10px;
   font-weight: 500;
   color: var(--title-text-color);
 }
@@ -195,15 +253,21 @@ abbr {
 /* Page footer */
 
 .page-footer {
+  padding: 60px 0;
   background-color: var(--dark-bg-color);
 }
 
 .footer-address {
+  margin-top: 20px;
   font-style: normal;
 }
 
+.footer-contacts > .item + .item {
+  margin-top: 9px;
+}
+
 .footer-contacts .link {
-  line-height: 1.71;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -219,6 +283,8 @@ abbr {
 /* Project card */
 
 .project-card > .title {
+  margin-bottom: 4px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
