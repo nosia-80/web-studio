@@ -14,19 +14,21 @@
   </head>
   <body>
     <!-- Page header -->
-    <header>
-      <div class="container">
-        <nav>
+    <header class="page-header">
+      <div class="container header-inner">
+        <nav class="header-nav">
           <a class="logo" href="./" lang="en">
             <span class="accent">Web</span> Studio
           </a>
 
           <ul class="site-nav list">
-            <li>
+            <li class="item">
               <a class="link active" href="./" aria-current="page">Студия</a>
             </li>
-            <li><a class="link" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="link" href="#">Контакты</a></li>
+            <li class="item">
+              <a class="link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="item"><a class="link" href="#">Контакты</a></li>
           </ul>
         </nav>
 
@@ -53,28 +55,28 @@
           <h2 class="visually-hidden">Особенности</h2>
 
           <ul class="features-list list">
-            <li>
+            <li class="item">
               <h3 class="title">Внимание к деталям</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Пунктуальность</h3>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Планирование</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Современные технологии</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -90,8 +92,8 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
 
-          <ul class="list">
-            <li>
+          <ul class="gallery-list list">
+            <li class="item">
               <img
                 src="./images/gallery/img-1.jpg"
                 alt="Разработчик пишет код на ноутбуке"
@@ -99,7 +101,7 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/gallery/img-2.jpg"
                 alt="Смартфон на бело-синем фоне"
@@ -107,7 +109,7 @@
                 height="294"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/gallery/img-3.jpg"
                 alt="Монитор iMac с открытым сайтом"
@@ -125,47 +127,55 @@
           <h2 class="section-title">Наша команда</h2>
 
           <ul class="team-list list">
-            <li>
+            <li class="item">
               <img
                 src="./images/team/photo-1.jpg"
                 alt="Николай Кучеренко"
                 width="270"
                 height="260"
               />
-              <h3 class="name">Николай Кучеренко</h3>
-              <p class="occupation" lang="en">Product Designer</p>
+              <div class="meta">
+                <h3 class="name">Николай Кучеренко</h3>
+                <p class="occupation" lang="en">Product Designer</p>
+              </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/team/photo-2.jpg"
                 alt="Ольга Иванова"
                 width="270"
                 height="260"
               />
-              <h3 class="name">Ольга Иванова</h3>
-              <p class="occupation" lang="en">Frontend Developer</p>
+              <div class="meta">
+                <h3 class="name">Ольга Иванова</h3>
+                <p class="occupation" lang="en">Frontend Developer</p>
+              </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/team/photo-3.jpg"
                 alt="Андрей Шевченко"
                 width="270"
                 height="260"
               />
-              <h3 class="name">Андрей Шевченко</h3>
-              <p class="occupation" lang="en">Marketing</p>
+              <div class="meta">
+                <h3 class="name">Андрей Шевченко</h3>
+                <p class="occupation" lang="en">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/team/photo-4.jpg"
                 alt="Иван Николаев"
                 width="270"
                 height="260"
               />
-              <h3 class="name">Иван Николаев</h3>
-              <p class="occupation" lang="en">
-                <abbr title="User Interface">UI</abbr> Designer
-              </p>
+              <div class="meta">
+                <h3 class="name">Иван Николаев</h3>
+                <p class="occupation" lang="en">
+                  <abbr title="User Interface">UI</abbr> Designer
+                </p>
+              </div>
             </li>
           </ul>
         </div>
