@@ -15,28 +15,38 @@
   <body>
     <!-- Page header -->
     <header class="page-header">
-      <div class="container header-inner">
-        <nav class="header-nav">
+      <div class="container page-header__container">
+        <nav class="page-header__nav">
           <a class="logo" href="./" lang="en">
-            <span class="accent">Web</span> Studio
+            <span class="logo--accent">Web</span> Studio
           </a>
 
           <ul class="site-nav list">
-            <li class="item">
-              <a class="link active" href="./" aria-current="page">Студия</a>
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--active"
+                href="./"
+                aria-current="page"
+              >
+                Студия
+              </a>
             </li>
-            <li class="item">
-              <a class="link" href="./portfolio.html">Портфолио</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="item"><a class="link" href="#">Контакты</a></li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Контакты</a>
+            </li>
           </ul>
         </nav>
 
         <div class="contacts">
-          <a class="link" href="mailto:info@devstudio.com">
+          <a class="contacts__link" href="mailto:info@devstudio.com">
             info@devstudio.com
           </a>
-          <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="contacts__link" href="tel:+380961111111">
+            +38 096 111 11 11
+          </a>
         </div>
       </div>
     </header>
@@ -45,40 +55,40 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button class="button" type="button">Заказать услугу</button>
       </section>
 
       <!-- Features -->
-      <section class="section no-padding-b">
+      <section class="section section--no-padding-b">
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
 
           <ul class="features-list list">
-            <li class="item">
-              <h3 class="title">Внимание к деталям</h3>
-              <p class="text">
+            <li class="features-list__item">
+              <h3 class="features-list__title">Внимание к деталям</h3>
+              <p class="features-list__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="item">
-              <h3 class="title">Пунктуальность</h3>
-              <p class="text">
+            <li class="features-list__item">
+              <h3 class="features-list__title">Пунктуальность</h3>
+              <p class="features-list__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="item">
-              <h3 class="title">Планирование</h3>
-              <p class="text">
+            <li class="features-list__item">
+              <h3 class="features-list__title">Планирование</h3>
+              <p class="features-list__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="item">
-              <h3 class="title">Современные технологии</h3>
-              <p class="text">
+            <li class="features-list__item">
+              <h3 class="features-list__title">Современные технологии</h3>
+              <p class="features-list__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -90,10 +100,10 @@
       <!-- Gallery -->
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
+          <h2 class="section__title">Чем мы занимаемся</h2>
 
           <ul class="gallery-list list">
-            <li class="item">
+            <li class="gallery-list__item">
               <img
                 src="./images/gallery/img-1.jpg"
                 alt="Разработчик пишет код на ноутбуке"
@@ -101,7 +111,7 @@
                 height="294"
               />
             </li>
-            <li class="item">
+            <li class="gallery-list__item">
               <img
                 src="./images/gallery/img-2.jpg"
                 alt="Смартфон на бело-синем фоне"
@@ -109,7 +119,7 @@
                 height="294"
               />
             </li>
-            <li class="item">
+            <li class="gallery-list__item">
               <img
                 src="./images/gallery/img-3.jpg"
                 alt="Монитор iMac с открытым сайтом"
@@ -122,57 +132,59 @@
       </section>
 
       <!-- Team -->
-      <section class="section secondary">
+      <section class="section section--secondary">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
 
           <ul class="team-list list">
-            <li class="item">
+            <li class="team-list__item">
               <img
                 src="./images/team/photo-1.jpg"
                 alt="Николай Кучеренко"
                 width="270"
                 height="260"
               />
-              <div class="meta">
-                <h3 class="name">Николай Кучеренко</h3>
-                <p class="occupation" lang="en">Product Designer</p>
+              <div class="team-list__meta">
+                <h3 class="team-list__name">Николай Кучеренко</h3>
+                <p class="team-list__occupation" lang="en">Product Designer</p>
               </div>
             </li>
-            <li class="item">
+            <li class="team-list__item">
               <img
                 src="./images/team/photo-2.jpg"
                 alt="Ольга Иванова"
                 width="270"
                 height="260"
               />
-              <div class="meta">
-                <h3 class="name">Ольга Иванова</h3>
-                <p class="occupation" lang="en">Frontend Developer</p>
+              <div class="team-list__meta">
+                <h3 class="team-list__name">Ольга Иванова</h3>
+                <p class="team-list__occupation" lang="en">
+                  Frontend Developer
+                </p>
               </div>
             </li>
-            <li class="item">
+            <li class="team-list__item">
               <img
                 src="./images/team/photo-3.jpg"
                 alt="Андрей Шевченко"
                 width="270"
                 height="260"
               />
-              <div class="meta">
-                <h3 class="name">Андрей Шевченко</h3>
-                <p class="occupation" lang="en">Marketing</p>
+              <div class="team-list__meta">
+                <h3 class="team-list__name">Андрей Шевченко</h3>
+                <p class="team-list__occupation" lang="en">Marketing</p>
               </div>
             </li>
-            <li class="item">
+            <li class="team-list__item">
               <img
                 src="./images/team/photo-4.jpg"
                 alt="Иван Николаев"
                 width="270"
                 height="260"
               />
-              <div class="meta">
-                <h3 class="name">Иван Николаев</h3>
-                <p class="occupation" lang="en">
+              <div class="team-list__meta">
+                <h3 class="team-list__name">Иван Николаев</h3>
+                <p class="team-list__occupation" lang="en">
                   <abbr title="User Interface">UI</abbr> Designer
                 </p>
               </div>
@@ -185,31 +197,25 @@
     <!-- Page footer -->
     <footer class="page-footer">
       <div class="container">
-        <a class="logo inverse" href="./" lang="en">
-          <span class="accent">Web</span> Studio
+        <a class="logo page-footer__logo" href="./" lang="en">
+          <span class="logo--accent">Web</span> Studio
         </a>
 
-        <address class="footer-address">
-          <ul class="footer-contacts list">
-            <li class="item">
-              <a
-                class="link map"
-                href="https://maps.app.goo.gl/Gkqo7Z41vK2xTPrL8"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                г. Киев, пр-т Леси Украинки, 26
-              </a>
-            </li>
-            <li class="item">
-              <a class="link" href="mailto:info@example.com">
-                info@example.com
-              </a>
-            </li>
-            <li class="item">
-              <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
-            </li>
-          </ul>
+        <address class="page-footer__address">
+          <a
+            class="page-footer__link page-footer__link--map"
+            href="https://maps.app.goo.gl/Gkqo7Z41vK2xTPrL8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            г. Киев, пр-т Леси Украинки, 26
+          </a>
+          <a class="page-footer__link" href="mailto:info@example.com">
+            info@example.com
+          </a>
+          <a class="page-footer__link" href="tel:+380991111111">
+            +38 099 111 11 11
+          </a>
         </address>
       </div>
     </footer>

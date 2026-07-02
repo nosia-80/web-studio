@@ -15,32 +15,38 @@
   <body>
     <!-- Page header -->
     <header class="page-header">
-      <div class="container header-inner">
-        <nav class="header-nav">
+      <div class="container page-header__container">
+        <nav class="page-header__nav">
           <a class="logo" href="./" lang="en">
-            <span class="accent">Web</span> Studio
+            <span class="logo--accent">Web</span> Studio
           </a>
 
           <ul class="site-nav list">
-            <li class="item"><a class="link" href="./">Студия</a></li>
-            <li class="item">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./">Студия</a>
+            </li>
+            <li class="site-nav__item">
               <a
-                class="link active"
+                class="site-nav__link site-nav__link--active"
                 href="./portfolio.html"
                 aria-current="page"
               >
                 Портфолио
               </a>
             </li>
-            <li class="item"><a class="link" href="#">Контакты</a></li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Контакты</a>
+            </li>
           </ul>
         </nav>
 
         <div class="contacts">
-          <a class="link" href="mailto:info@devstudio.com">
+          <a class="contacts__link" href="mailto:info@devstudio.com">
             info@devstudio.com
           </a>
-          <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="contacts__link" href="tel:+380961111111">
+            +38 096 111 11 11
+          </a>
         </div>
       </div>
     </header>
@@ -53,7 +59,7 @@
           <h1 class="visually-hidden">Наши работы</h1>
 
           <ul class="works-list list">
-            <li class="item">
+            <li class="works-list__item">
               <article class="project-card">
                 <img
                   src="./images/works/pic-1.jpg"
@@ -61,13 +67,13 @@
                   width="370"
                   height="294"
                 />
-                <div class="content">
-                  <h2 class="title"><a href="#">Технокряк</a></h2>
-                  <p class="tag">Веб-сайт</p>
+                <div class="project-card__content">
+                  <h2 class="project-card__title"><a href="#">Технокряк</a></h2>
+                  <p class="project-card__tag">Веб-сайт</p>
                 </div>
               </article>
             </li>
-            <li class="item">
+            <li class="works-list__item">
               <article class="project-card">
                 <img
                   src="./images/works/pic-2.jpg"
@@ -75,8 +81,8 @@
                   width="370"
                   height="294"
                 />
-                <div class="content">
-                  <h2 class="title">
+                <div class="project-card__content">
+                  <h2 class="project-card__title">
                     <a href="#">
                       Постер
                       <span lang="en">
@@ -84,11 +90,11 @@
                       </span>
                     </a>
                   </h2>
-                  <p class="tag">Дизайн</p>
+                  <p class="project-card__tag">Дизайн</p>
                 </div>
               </article>
             </li>
-            <li class="item">
+            <li class="works-list__item">
               <article class="project-card">
                 <img
                   src="./images/works/pic-3.jpg"
@@ -96,15 +102,15 @@
                   width="370"
                   height="294"
                 />
-                <div class="content">
-                  <h2 class="title">
+                <div class="project-card__content">
+                  <h2 class="project-card__title">
                     <a href="#">Ресторан <span lang="en">Seafood</span></a>
                   </h2>
-                  <p class="tag">Приложение</p>
+                  <p class="project-card__tag">Приложение</p>
                 </div>
               </article>
             </li>
-            <li class="item">
+            <li class="works-list__item">
               <article class="project-card">
                 <img
                   src="./images/works/pic-4.jpg"
@@ -112,15 +118,15 @@
                   width="370"
                   height="294"
                 />
-                <div class="content">
-                  <h2 class="title">
+                <div class="project-card__content">
+                  <h2 class="project-card__title">
                     <a href="#">Проект <span lang="en">Prime</span></a>
                   </h2>
-                  <p class="tag">Маркетинг</p>
+                  <p class="project-card__tag">Маркетинг</p>
                 </div>
               </article>
             </li>
-            <li class="item">
+            <li class="works-list__item">
               <article class="project-card">
                 <img
                   src="./images/works/pic-5.jpg"
@@ -128,15 +134,15 @@
                   width="370"
                   height="294"
                 />
-                <div class="content">
-                  <h2 class="title">
+                <div class="project-card__content">
+                  <h2 class="project-card__title">
                     <a href="#">Проект <span lang="en">Boxes</span></a>
                   </h2>
-                  <p class="tag">Приложение</p>
+                  <p class="project-card__tag">Приложение</p>
                 </div>
               </article>
             </li>
-            <li class="item">
+            <li class="works-list__item">
               <article class="project-card">
                 <img
                   src="./images/works/pic-6.jpg"
@@ -144,15 +150,15 @@
                   width="370"
                   height="294"
                 />
-                <div class="content">
-                  <h2 class="title">
+                <div class="project-card__content">
+                  <h2 class="project-card__title">
                     <a href="#" lang="en">Inspiration has no Borders</a>
                   </h2>
-                  <p class="tag">Веб-сайт</p>
+                  <p class="project-card__tag">Веб-сайт</p>
                 </div>
               </article>
             </li>
-            <li class="item">
+            <li class="works-list__item">
               <article class="project-card">
                 <img
                   src="./images/works/pic-7.jpg"
@@ -160,17 +166,17 @@
                   width="370"
                   height="294"
                 />
-                <div class="content">
-                  <h2 class="title">
+                <div class="project-card__content">
+                  <h2 class="project-card__title">
                     <a href="#">
                       Издание <span lang="en">Limited Edition</span>
                     </a>
                   </h2>
-                  <p class="tag">Дизайн</p>
+                  <p class="project-card__tag">Дизайн</p>
                 </div>
               </article>
             </li>
-            <li class="item">
+            <li class="works-list__item">
               <article class="project-card">
                 <img
                   src="./images/works/pic-8.jpg"
@@ -178,17 +184,17 @@
                   width="370"
                   height="294"
                 />
-                <div class="content">
-                  <h2 class="title">
+                <div class="project-card__content">
+                  <h2 class="project-card__title">
                     <a href="#">
                       Проект <abbr title="Laboratory" lang="en">LAB</abbr>
                     </a>
                   </h2>
-                  <p class="tag">Маркетинг</p>
+                  <p class="project-card__tag">Маркетинг</p>
                 </div>
               </article>
             </li>
-            <li class="item">
+            <li class="works-list__item">
               <article class="project-card">
                 <img
                   src="./images/works/pic-9.jpg"
@@ -196,11 +202,11 @@
                   width="370"
                   height="294"
                 />
-                <div class="content">
-                  <h2 class="title">
+                <div class="project-card__content">
+                  <h2 class="project-card__title">
                     <a href="#" lang="en">Growing Business</a>
                   </h2>
-                  <p class="tag">Приложение</p>
+                  <p class="project-card__tag">Приложение</p>
                 </div>
               </article>
             </li>
@@ -212,31 +218,25 @@
     <!-- Page footer -->
     <footer class="page-footer">
       <div class="container">
-        <a class="logo inverse" href="./" lang="en">
-          <span class="accent">Web</span> Studio
+        <a class="logo page-footer__logo" href="./" lang="en">
+          <span class="logo--accent">Web</span> Studio
         </a>
 
-        <address class="footer-address">
-          <ul class="footer-contacts list">
-            <li>
-              <a
-                class="link map"
-                href="https://maps.app.goo.gl/Gkqo7Z41vK2xTPrL8"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                г. Киев, пр-т Леси Украинки, 26
-              </a>
-            </li>
-            <li>
-              <a class="link" href="mailto:info@example.com">
-                info@example.com
-              </a>
-            </li>
-            <li>
-              <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
-            </li>
-          </ul>
+        <address class="page-footer__address">
+          <a
+            class="page-footer__link page-footer__link--map"
+            href="https://maps.app.goo.gl/Gkqo7Z41vK2xTPrL8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            г. Киев, пр-т Леси Украинки, 26
+          </a>
+          <a class="page-footer__link" href="mailto:info@example.com">
+            info@example.com
+          </a>
+          <a class="page-footer__link" href="tel:+380991111111">
+            +38 099 111 11 11
+          </a>
         </address>
       </div>
     </footer>
