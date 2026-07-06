@@ -216,12 +216,26 @@ abbr {
 /* Hero */
 
 .hero {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1600px;
+  min-height: 600px;
+  padding: 40px 0;
+  margin: 0 auto;
+
   background-color: var(--dark-bg-color);
+  background-image:
+    linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+    url('../images/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero__title {
-  width: 696px;
+  max-width: 696px;
   margin: 0 auto 30px;
 
   font-weight: 900;
@@ -230,6 +244,7 @@ abbr {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   text-transform: uppercase;
+  text-align: center;
 }
 
 /* Section */
