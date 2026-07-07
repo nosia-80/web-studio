@@ -280,6 +280,34 @@ abbr {
   flex-basis: calc((100% - 3 * var(--item-margin)) / 4);
 }
 
+.features-list__item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: var(--item-margin);
+
+  background-color: var(--secondary-bg-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: var(--radius);
+}
+
+.features-list__item--antenna::before {
+  background-image: url('../images/features/antenna.svg');
+}
+
+.features-list__item--clock::before {
+  background-image: url('../images/features/clock.svg');
+}
+
+.features-list__item--diagram::before {
+  background-image: url('../images/features/diagram.svg');
+}
+
+.features-list__item--astronaut::before {
+  background-image: url('../images/features/astronaut.svg');
+}
+
 .features-list__item:not(:last-child) {
   margin-right: var(--item-margin);
 }
