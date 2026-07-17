@@ -50,12 +50,17 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --accent-color-90: rgba(33, 150, 243, 0.9);
   --button-hover-bg-color: #188ce8;
   --primary-white-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --dark-bg-color: #2f303a;
+  --overlay-color: rgba(47, 48, 58, 0.8);
   --icon-link-color: #afb1b8;
 
+  --shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
+    0 2px 1px rgba(0, 0, 0, 0.2);
   --item-margin: 30px;
   --radius: 4px;
 }
@@ -138,11 +143,12 @@ abbr {
 
 .button {
   min-width: 200px;
-  padding: 10px 28px;
+  min-height: 50px;
+  padding: 15px 28px;
 
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.14;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
 
@@ -231,9 +237,23 @@ abbr {
 }
 
 .site-nav__link {
+  position: relative;
   display: block;
   padding: 32px 0 31px;
   color: var(--title-text-color);
+}
+
+.site-nav__link--active::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+
+  content: '';
+  width: 100%;
+  height: 4px;
+
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 .contacts {
@@ -276,7 +296,7 @@ abbr {
 
   background-color: var(--dark-bg-color);
   background-image:
-    linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+    linear-gradient(var(--overlay-color), var(--overlay-color)),
     url('../images/hero-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -382,7 +402,27 @@ abbr {
 }
 
 .gallery-list__item {
+  position: relative;
   flex-basis: calc((100% - 2 * var(--item-margin)) / 3);
+}
+
+.gallery-list__label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  min-height: 70px;
+  padding: 27px 24px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: var(--overlay-color);
 }
 
 /* Team */
@@ -395,10 +435,7 @@ abbr {
   flex-basis: calc((100% - 3 * var(--item-margin)) / 4);
 
   background-color: var(--primary-white-color);
-  box-shadow:
-    0 1px 3px rgba(0, 0, 0, 0.12),
-    0 1px 1px rgba(0, 0, 0, 0.14),
-    0 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow);
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
   overflow: hidden;
@@ -522,6 +559,66 @@ abbr {
   text-transform: uppercase;
 }
 
+/* Modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop--hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  min-height: 581px;
+
+  background-color: var(--primary-white-color);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  color: #000000;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal__close-btn:hover,
+.modal__close-btn:focus {
+  color: var(--accent-color);
+}
+
+.modal__close-icon {
+  fill: currentColor;
+}
+
 /* Works */
 
 .works-list {
@@ -537,6 +634,40 @@ abbr {
 
 /* Project card */
 
+.project-card {
+  position: relative;
+}
+
+.project-card:has(:hover, :focus) {
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-card__thumb {
+  position: relative;
+}
+
+.project-card__descr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--primary-white-color);
+
+  background-color: var(--accent-color-90);
+  opacity: 0;
+}
+
+.project-card:has(:hover, :focus) .project-card__descr {
+  opacity: 1;
+}
+
 .project-card__content {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
@@ -550,6 +681,16 @@ abbr {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+}
+
+.project-card__link::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  content: '';
+  width: 100%;
+  height: 100%;
 }
 
 .project-card__tag {
