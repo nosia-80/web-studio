@@ -23,6 +23,8 @@
 - shadow:
     0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
     0 2px 1px rgba(0, 0, 0, 0.2)
+- transition duration: 250ms
+- timing function: cubic-bezier(0.4, 0, 0.2, 1)
 
 ## Geometry
 
@@ -86,6 +88,10 @@ gallery-list
 
 team-list
   team-list__item
+  team-list__scene
+  team-list__thumb
+  team-list__img
+  team-list__img--back
   team-list__meta
   team-list__name
   team-list__occupation
