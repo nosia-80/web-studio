@@ -80,7 +80,6 @@ features-list
   features-list__item--diagram
   features-list__item--astronaut
   features-list__title
-  features-list__text
 
 gallery-list
   gallery-list__item

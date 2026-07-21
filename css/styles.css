@@ -89,6 +89,7 @@ body {
   font-family: var(--main-font);
   font-size: 14px;
   letter-spacing: 0.03em;
+  line-height: 1.71;
   color: var(--primary-text-color);
 
   background-color: var(--primary-white-color);
@@ -231,6 +232,7 @@ abbr {
 /* Page header */
 
 .page-header {
+  min-height: 80px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -430,10 +432,6 @@ abbr {
   line-height: 1.14;
   color: var(--title-text-color);
   text-transform: uppercase;
-}
-
-.features-list__text {
-  line-height: 1.71;
 }
 
 /* Gallery */
